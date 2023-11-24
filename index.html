@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="application.js"></script>
+</head>
+
+<body ng-controller="MainController">
+    <div class="container">
+        <div class="jumbotron">
+            <h2 class="text-center">Temperature Converter</h2>
+            <div class="row">
+                <!-- Fahrenheit to Celsius -->
+                <div class="col-md-6">
+                    <form name="calc" ng-submit="incrementLikes(likes)" class="form-group text-center">
+                        <label for="fahrenheit">Fahrenheit:</label>
+                        <input type="number" id="fahrenheit" class="form-control" step="any" required placeholder="Enter Fahrenheit" ng-model="likes" />
+                        <button type="submit" class="btn btn-primary mt-2">Convert to Celsius</button>
+                        <span class="equals"> = </span>
+                        <span class="result">{{obj.hello}} {{obj.cels}} °C</span>
+                    </form>
+                </div>
+                <!-- Celsius to Fahrenheit -->
+                <div class="col-md-6">
+                    <form name="calc2" ng-submit="toFehr(number2)" class="form-group text-center">
+                        <label for="celsius">Celsius:</label>
+                        <input type="number" id="celsius" class="form-control" step="any" required placeholder="Enter Celsius" ng-model="number2" />
+                        <button type="submit" class="btn btn-primary mt-2">Convert to Fahrenheit</button>
+                        <span class="equals"> = </span>
+                        <span class="result">{{obj.hello2}} {{obj.fehr}} °F</span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Celsius to Kelvin -->
+                <div class="col-md-6">
+                    <form name="calc3" ng-submit="toKelvin(number3)" class="form-group text-center">
+                        <label for="celsiusK">Celsius:</label>
+                        <input type="number" id="celsiusK" class="form-control" step="any" required placeholder="Enter Celsius" ng-model="number3" />
+                        <button type="submit" class="btn btn-primary mt-2">Convert to Kelvin</button>
+                        <span class="equals"> = </span>
+                        <span class="result">{{obj.hello3}} {{obj.kelvin}} K</span>
+                    </form>
+                </div>
+
+                <!-- Kelvin to Celsius -->
+                <div class="col-md-6">
+                    <form name="calc4" ng-submit="toCelsius(number4)" class="form-group text-center">
+                        <label for="kelvin">Kelvin:</label>
+                        <input type="number" id="kelvin" class="form-control" step="any" required placeholder="Enter Kelvin" ng-model="number4" />
+                        <button type="submit" class="btn btn-primary mt-2">Convert to Celsius</button>
+                        <span class="equals"> = </span>
+                        <span class="result">{{obj.hello4}} {{obj.celsius}} °C</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

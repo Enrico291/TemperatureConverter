@@ -1,0 +1,56 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.result,
+.equals {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 20px;
+    /* Rounded corners for buttons */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.input-group-addon {
+    color: #555;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
